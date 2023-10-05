@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    margin: 5px;
+    border: 2px solid rgb(87, 8, 225);
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('ภาพคณะวิทย์.jpg');
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(80%);
+}
+
+.logo img {
+    position: absolute;
+    width: 9.3rem;
+    height: 9.3rem;
+    top: 10%;
+    left: 15%;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.logo p {
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    top: 13%;
+    left: 30%;
+    color: azure;
+    font-size: 1.5rem;
+    font-family: 'Itim', cursive;
+}
+
+a {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    background: none;
+    color: rgb(252, 251, 251);
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    padding: 8px 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    border: 3px solid #f9f6f6;
+}
+
+a:hover {
+    background-color: rgb(252, 200, 243);
+    color: black;
+    border: 3px solid black;
+}
